@@ -4,6 +4,6 @@ This contains the following algorithms / data structures:
 2. Mergesort with counting inversions.
 3. Closest pair of points on a plane
 *. Strassen's Matrix multiplication algorithm
-4. Quicksort
+4. Quicksort and ith order statistic.
 
 * : Yet to be added.
