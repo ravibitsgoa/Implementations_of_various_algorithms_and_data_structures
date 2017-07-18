@@ -6,5 +6,6 @@ This contains the following algorithms / data structures:
 *. Strassen's Matrix multiplication algorithm
 4. Quicksort and ith order statistic.
 5. Karger's minimum cut algorithm with union-find data structure.
+6. BFS implementation
 
 * : Yet to be added.

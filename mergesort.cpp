@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 //This mergesort function takes as an argument, the starting iterator and the end iterator.
+//time-complexity: O(NlogN)
 int inversions=0;
 template <typename T>
 void mergesort(T *pstart, T *pend)
