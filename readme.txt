@@ -5,5 +5,6 @@ This contains the following algorithms / data structures:
 3. Closest pair of points on a plane
 *. Strassen's Matrix multiplication algorithm
 4. Quicksort and ith order statistic.
+5. Karger's minimum cut algorithm with union-find data structure.
 
 * : Yet to be added.
