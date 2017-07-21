@@ -7,5 +7,5 @@ This contains the following algorithms / data structures:
 4. Quicksort and ith order statistic.
 5. Karger's minimum cut algorithm with union-find data structure.
 6. BFS and DFS implementation
-
+7. Fibonacci Nth term
 * : Yet to be added.
