@@ -8,4 +8,11 @@ This contains the following algorithms / data structures:
 5. Karger's minimum cut algorithm with union-find data structure.
 6. BFS and DFS implementation
 7. Fibonacci Nth term
+8. Segment tree
+9. Heap
+10. Convex Hull, naive implementation
+11. Fast Modular exponentiation
+12. Sieve of Eratosthenes for generating primes
+13. N-dimensional Vectors
+
 * : Yet to be added.
