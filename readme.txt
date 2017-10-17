@@ -15,5 +15,6 @@ This contains the following algorithms / data structures:
 12. Sieve of Eratosthenes for generating primes
 13. N-dimensional Vectors
 13. Prim's Minimal spanning tree algorithm
+14. Algorithm to find Suffix array of a string
 
 * : Yet to be added.
