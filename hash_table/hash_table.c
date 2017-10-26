@@ -14,7 +14,7 @@ static ht_item HT_DELETED_ITEM = {NULL, NULL};	//This is just a ghost item.
 ht_item* new_ht_item(const char* key, const char* value)
 {
 	if(key == NULL || value == NULL)
-		return;
+		return NULL;
 		
     ht_item* i= malloc(sizeof(ht_item));
     i->key = malloc(sizeof(key));
@@ -189,12 +189,18 @@ void ht_insert(hash_table* ht, const char* key, const char* value)
 	
 	ht_item* this_item = new_ht_item(key, value);
 	for(int i=0; 1; i++)
-	{	
+	{	printf("%d", i);		//debugging statements.
 		int hash_val = get_hash(key, ht->size, i);
 		ht_item* cur_item = (ht->item)[hash_val];
 		if(cur_item == NULL || cur_item == &HT_DELETED_ITEM)
 		{
 			(ht->item)[hash_val] = this_item;
+			break;
+		}
+		//printf("%s %s ", cur_item->key, cur_item->value);
+		if(strcmp(cur_item->key, key) == 0)	//If a given key already exists, and we're overwriting it.
+		{	cur_item->value = malloc(sizeof(value));
+			strcpy(cur_item->value, value);
 			break;
 		}
 	}
@@ -237,9 +243,11 @@ int ht_delete(hash_table* ht, const char* key)
 	for(int i=0; 1; i++)
 	{
 		int hash_val = get_hash(key, ht->size, i);
-		ht_item* this_item = (ht->item)[hash_val];
 		//printf("%d %d", i, hash_val);
 		//fflush(stdout);
+		//return 0;
+		
+		ht_item* this_item = (ht->item)[hash_val];
 		if( this_item == NULL || this_item == &HT_DELETED_ITEM)	//No such key is found in hash table.
 			return 0;
 		

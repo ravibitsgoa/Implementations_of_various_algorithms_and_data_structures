@@ -31,6 +31,15 @@ int main()
 			fgets(value, MAXLEN, stdin);
 			value[MAXLEN]='\0';
 			value[strlen(value)-1]='\0';
+			char *valForThisKey =ht_search(ht, key);
+			if(valForThisKey)
+			{	printf("%s, %s pair exists in the hashtable.\nDo you want to overwrite it? [Y/N]", key, valForThisKey);
+				char c='a';
+				while(c!='Y' && c!='N')
+					scanf("%c",&c);
+				if(c=='N')
+					continue;
+			}
 			ht_insert(ht, key, value);
 			printf("%s, %s is inserted into the hashtable.\n", key, value);
 		}
@@ -43,11 +52,11 @@ int main()
 		}
 		else if(choice == 3) 
 		{
-			char *temp= ht_search(ht, key);
-			if(temp == NULL)
+			char *val= ht_search(ht, key);
+			if(val == NULL)
 				printf("%s key doesn't exist in the hashtable.\n", key);
 			else
-				printf("%s, %s exists in the hashtable.\n", key, temp);
+				printf("%s, %s exists in the hashtable.\n", key, val);
 		}
 		else 
 		{
