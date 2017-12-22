@@ -1,6 +1,6 @@
 // This implements sieve of Eratosthenes algorithm to find primes among numbers
 // upto "LIMIT", which should not exceed "PRIMES".
-// Time-complexity: O(N* lnN)
+// Time-complexity: O(N)
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -27,15 +27,15 @@ using namespace std;
 
 int main()
 {
-    sieve(LIMIT);   
+    sieve(LIMIT);
     //The following is the testing component for sieve.
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    
+
     int t;
     cin>>t;
     while(t--)
-    {   
+    {
         int a;
         cin>>a;
         //if(binary_search(primes, primes+ PRIMES, a))
