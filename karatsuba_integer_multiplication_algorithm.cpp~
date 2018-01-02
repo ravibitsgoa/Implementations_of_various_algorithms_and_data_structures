@@ -159,12 +159,12 @@ string mul(const string &x, const string &y)
 }
 
 int main()
-{   string a, b;
-    cout<<"Enter first number.\na =\t";
-    cin>>a;
-    cout<<"Enter second number.\nb =\t";
-    cin>>b;
-    cout<<"a*b =\t"<<mul(a, b)<<'\n';
-    //cout<<"a+b =\t"<<sum(a,b)<<'\n';
-    return 0;
+{ string a, b;
+  cout<<"Enter first number.\na =\t";
+  cin>>a;
+  cout<<"Enter second number.\nb =\t";
+  cin>>b;
+  cout<<"a*b =\t"<<mul(a, b)<<'\n';
+  //cout<<"a+b =\t"<<sum(a,b)<<'\n';
+return 0;
 }
