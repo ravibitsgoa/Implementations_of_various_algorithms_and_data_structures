@@ -20,5 +20,10 @@ This contains the following algorithms / data structures:
 16. Rabin Miller deterministic primality test
 17. fast modular multiplicative inverse
 18. Matrix library
+19. Extended Euclidean algorithm to find modular multiplicative inverse
+20. Knuth Morris Pratt string matching algorithm
+21. Z algorithm for string matching
+22. Square-root decompositon for range sum queries.
+23. Binary search tree (with insert, delete, search, print)
 
 * : Yet to be added.
